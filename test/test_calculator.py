@@ -4,6 +4,10 @@ __author__ = 'florije'
 import unittest
 from app.calculator import Calculator
 
+"""
+nosetests test_calculator.py
+"""
+
 
 class TddInPythonExample(unittest.TestCase):
     def setUp(self):
