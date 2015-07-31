@@ -11,7 +11,7 @@ class Simple(FunkLoadTestCase):
         self.server_url = self.conf_get('main', 'url')
 
     def test_simple(self):
-        server_url = self.server_url
+        server_url = self.server_url  #
         res = self.get(server_url, description='Get url')
         self.assertEqual(res.code, 200)
         self.assertEqual(res.body, "Hello World")
